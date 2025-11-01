@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 200 30% 97%;
+    --foreground: 210 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    --primary: 200 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 70% 92%;
+    --secondary-foreground: 210 15% 20%;
+
+    --muted: 200 20% 90%;
+    --muted-foreground: 210 12% 50%;
+
+    --accent: 185 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 88%;
+    --input: 200 20% 88%;
+    --ring: 200 85% 55%;
+
+    --radius: 1rem;
+
+    /* Weather-themed gradients */
+    --gradient-sky: linear-gradient(180deg, hsl(200, 85%, 65%) 0%, hsl(195, 75%, 85%) 100%);
+    --gradient-cloud: linear-gradient(135deg, hsl(0, 0%, 98%) 0%, hsl(195, 70%, 92%) 100%);
+    --gradient-message-user: linear-gradient(135deg, hsl(200, 85%, 55%) 0%, hsl(195, 80%, 65%) 100%);
+    --gradient-message-bot: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(195, 70%, 95%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(200, 60%, 70% / 0.15);
+    --shadow-message: 0 2px 8px -2px hsl(200, 40%, 60% / 0.12);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 20% 12%;
+    --foreground: 200 20% 95%;
+
+    --card: 210 18% 16%;
+    --card-foreground: 200 20% 95%;
+
+    --popover: 210 18% 16%;
+    --popover-foreground: 200 20% 95%;
+
+    --primary: 200 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 22%;
+    --secondary-foreground: 200 20% 95%;
+
+    --muted: 210 18% 20%;
+    --muted-foreground: 200 12% 65%;
+
+    --accent: 185 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 18% 24%;
+    --input: 210 18% 24%;
+    --ring: 200 85% 55%;
+
+    --gradient-sky: linear-gradient(180deg, hsl(210, 40%, 20%) 0%, hsl(210, 25%, 15%) 100%);
+    --gradient-cloud: linear-gradient(135deg, hsl(210, 18%, 18%) 0%, hsl(210, 20%, 22%) 100%);
+    --gradient-message-user: linear-gradient(135deg, hsl(200, 85%, 45%) 0%, hsl(195, 80%, 55%) 100%);
+    --gradient-message-bot: linear-gradient(135deg, hsl(210, 18%, 20%) 0%, hsl(210, 20%, 24%) 100%);
+
+    --shadow-soft: 0 4px 20px -2px hsl(0, 0%, 0% / 0.3);
+    --shadow-message: 0 2px 8px -2px hsl(0, 0%, 0% / 0.2);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
